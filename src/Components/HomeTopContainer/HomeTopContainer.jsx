@@ -4,7 +4,7 @@ import NewFeatureAlert from "../NewFeatureAlert";
 
 const HomeTopContainer = () => {
   return (
-    <div class="text-center mx-auto pt-5 border-top">
+    <div class="text-center mx-auto pt-5">
       <div class="card-body d-flex flex-column justify-content-center">
         <NewFeatureAlert />
         <h1

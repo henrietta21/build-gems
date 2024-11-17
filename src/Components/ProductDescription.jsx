@@ -4,15 +4,10 @@ import Image from "../assets/images/Image.png";
 
 const ProductDescription = () => {
   return (
-    <div>
-      <div className="d-flex row g-4 my-5 mx-auto">
+    <div className="section">
+      <div className="d-flex row my-5 justify-content-center ">
         <div className="col-md-6 d-flex flex-column">
-          <div
-            className="card-body mb-auto"
-            style={{
-              border: "1px solid red",
-            }}
-          >
+          <div className="card-body mb-3">
             <p className="card-text">
               <small
                 className="text-body-secondary"
@@ -67,12 +62,7 @@ const ProductDescription = () => {
               Together, let’s build the next generation!
             </p>
           </div>
-          <div
-            className="d-flex g-4"
-            style={{
-              border: "1px solid red",
-            }}
-          >
+          <div className="d-sm-flex flex-sm-row flex-sm-nowrap">
             <Buttons text="Get mentor" className="btn-primary" type="submit" />
             <Buttons
               text="Become a mentor"
@@ -82,7 +72,11 @@ const ProductDescription = () => {
           </div>
         </div>
         <div className="col-md-6">
-          <img src={Image} className="img-fluid rounded-start" />
+          <img
+            src={Image}
+            className="img-fluid rounded "
+            style={{ width: "100%" }}
+          />
         </div>
       </div>
     </div>

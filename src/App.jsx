@@ -16,7 +16,7 @@ function App() {
       <div className="main">
         <div className="dotted-background">
           <HomeTopContainer />
-          <PictureCard />
+          <PictureCard rows="4" />
         </div>
         <StatSummary />
         <ProductDescription />

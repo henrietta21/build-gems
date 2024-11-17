@@ -8,17 +8,10 @@ const StatSummary = () => {
         className="purpleContainer d-flex flex-sm-row mx-auto justify-content-center"
         style={{
           maxHeight: "240px",
-          border: "1px solid red",
-          maxWidth: "80%",
         }}
       >
         {StatSummaryData.map((items) => (
-          <div
-            className="mx-auto"
-            style={{
-              border: "1px solid red",
-            }}
-          >
+          <div className="mx-auto">
             <h2
               className="display-4 text-primary"
               style={{

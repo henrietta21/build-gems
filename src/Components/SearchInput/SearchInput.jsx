@@ -21,6 +21,7 @@ const SearchInput = ({ placeholder, input }) => {
               border: " 1px solid #D0D5DD",
               fontWeight: "400",
               fontSize: "16px",
+              color: "#667085",
             }}
           />
         </div>

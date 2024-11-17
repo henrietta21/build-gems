@@ -6,7 +6,7 @@ import "./Nav.scss";
 
 const Nav = () => {
   return (
-    <div className="section">
+    <div className="section border-bottom">
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
