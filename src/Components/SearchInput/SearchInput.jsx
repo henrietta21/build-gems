@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Search from "../../assets/images/Icon.png";
+import { careers } from "../../Utility/data";
 
 const SearchInput = ({ placeholder, input }) => {
+  const [searchTerm, setSearchTerm] = useState("");
+  console.log(searchTerm);
+
+  const filteredCareers = careers.filter((career) =>
+    career.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+  console.log(filteredCareers);
+
   return (
     <div>
       {input == "search" ? (
@@ -17,6 +26,8 @@ const SearchInput = ({ placeholder, input }) => {
             className="form-control border-start-0"
             placeholder={placeholder}
             aria-label="Search"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
             style={{
               border: " 1px solid #D0D5DD",
               fontWeight: "400",
@@ -24,6 +35,28 @@ const SearchInput = ({ placeholder, input }) => {
               color: "#667085",
             }}
           />
+          <div class="dropdown me-1">
+            <ul class="dropdown-menu">
+              {careers.map((career) => (
+                <li
+                  key={career.id}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    padding: "10px",
+                    borderBottom: "1px solid #eee",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => alert(`You selected: ${career.name}`)}
+                >
+                  <a class="dropdown-item" href="#">
+                    <span style={{ marginRight: "10px" }}>{career.icon}</span>
+                    {career.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       ) : (
         <div className="input-group">

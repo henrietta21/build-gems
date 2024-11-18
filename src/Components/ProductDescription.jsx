@@ -62,7 +62,7 @@ const ProductDescription = () => {
               Together, let’s build the next generation!
             </p>
           </div>
-          <div className="d-sm-flex flex-sm-row flex-sm-nowrap">
+          <div className="d-sm-flex flex-sm-row flex-sm-nowrap gap-3">
             <Buttons text="Get mentor" className="btn-primary" type="submit" />
             <Buttons
               text="Become a mentor"

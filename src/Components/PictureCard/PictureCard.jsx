@@ -11,7 +11,7 @@ const PictureCard = ({ rows }) => {
           className="row row-cols-1 row-cols-md-4 justify-content-center  row-gap-3 mb-5 mx-0 section"
           style={{}}
         >
-          {MentorsProfile.map((item) => (
+          {HomeCards.map((item) => (
             <div
               className="card border-0"
               style={{

@@ -90,6 +90,10 @@
   border: none;
 }
 
+.accordion-button::after{
+  background-image: none;
+}
+
 .btn-accent-1:hover,.btn-accent-2:hover{
   color: #FFFFFF;
   background-color: #7F56D9;

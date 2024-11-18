@@ -100,21 +100,25 @@ export const StatSummaryData = [
 
 export const FAQData = [
   {
+    id: "1",
     question: "How much is mentorship fee?",
     answer:
       "Its absolutely FREE, you just have to pay the price of dedication, seriousness and determination",
   },
   {
+    id: "2",
     question: "Is this for only Unilag students?",
     answer:
       "Its absolutely FREE, you just have to pay the price of dedication, seriousness and determination",
   },
   {
+    id: "3",
     question: "How long would the mentorship last?",
     answer:
       "Its absolutely FREE, you just have to pay the price of dedication, seriousness and determination",
   },
   {
+    id: "4",
     question: "Is it going to be a 1v1 mentorship session?",
     answer:
       "Its absolutely FREE, you just have to pay the price of dedication, seriousness and determination",
@@ -218,4 +222,19 @@ export const MentorsProfile = [
     school: "University of Lagos",
     bio: "I am a software engineer with a background in engineering and business...",
   },
+];
+
+export const careers = [
+  { id: 1, name: "Data Analysis", icon: "📊" },
+  { id: 2, name: "Data Science", icon: "📚" },
+  { id: 3, name: "Design", icon: "🎨" },
+  { id: 4, name: "Cybersecurity", icon: "🔒" },
+  { id: 5, name: "Product Management", icon: "📈" },
+  { id: 6, name: "Project Management", icon: "📋" },
+  { id: 7, name: "Technical Writing", icon: "✍️" },
+  { id: 8, name: "Machine Learning", icon: "🤖" },
+  { id: 9, name: "UX Writing", icon: "🖍️" },
+  { id: 10, name: "Investment Banking", icon: "💰" },
+  { id: 11, name: "Software Engineering", icon: "💻" },
+  { id: 12, name: "Quality Assurance", icon: "✅" },
 ];
